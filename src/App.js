@@ -5,7 +5,7 @@ function App() {
   const formEl = useRef();
   const [result, setResult] = useState();
 
-  const url = "https://localhost:5000";
+  const url = "http://localhost:5000";
 
   const calculate = async (request) => {
     const response = await fetch(`${url}/calc/`, {
