@@ -18,14 +18,11 @@ function App() {
     });
 
     const data = await response.json();
-    console.log(data);
     setResult(data);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    console.log(formEl.current.elements);
 
     const reqData = {
       num1: formEl.current.elements[0].value,
@@ -33,7 +30,6 @@ function App() {
       oper: formEl.current.elements[1].value,
     };
 
-    console.log(reqData);
     calculate(reqData);
   };
   return (
